@@ -1,0 +1,25 @@
+
+a {
+    &:link {color: goldenrod;}
+    &:hover {color: red;}
+    &:visited {color: purple;}
+    &:active {color: blue;}
+}
+
+figure {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        gap: 1em;
+        li {
+            padding: 10px;
+        }
+    }
+}
