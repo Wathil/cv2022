@@ -1,24 +1,82 @@
+@font-face {
+  font-family: 'Roboto regular';
+  src: url("../fonts/roboto/Roboto-Regular-webfont.woff") format("woff");
+  font-display: swap; }
+@font-face {
+  font-family: 'Playfair regular';
+  src: url("../fonts/playfair-display/PlayfairDisplay-Regular.otf") format("otf");
+  font-display: swap; }
+@font-face {
+  font-family: 'Playfair bold ';
+  src: url("../fonts/playfair-display/PlayfairDisplay-Bold.otf") format("otf");
+  font-display: swap; }
+@font-face {
+  font-family: 'Playfair bold italic';
+  src: url("../fonts/playfair-display/PlayfairDisplay-BoldItalic.otf") format("otf");
+  font-display: swap; }
+@font-face {
+  font-family: 'Opensans regular';
+  src: url("../fonts/opensans/opensans_regular_macroman/OpenSans-Regular-webfont.woff") format("woff");
+  font-display: swap; }
+* {
+  box-sizing: border-box; }
+
+header {
+  text-align: center; }
+  header img {
+    filter: grayscale(100); }
+
 a:link {
-  color: goldenrod; }
+  color: #daa520; }
 a:hover {
-  color: red; }
-a:visited {
-  color: purple; }
+  color: #373737; }
 a:active {
-  color: blue; }
+  color: #373737; }
+
+ul {
+  list-style: none; }
 
 figure {
   margin: 0; }
 
 nav {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin: 0; }
   nav ul {
+    margin: 0;
     list-style: none;
     display: flex;
     justify-content: space-around;
-    gap: 1em; }
+    gap: .1em; }
     nav ul li {
-      padding: 10px; }
+      flex: 1 0 auto;
+      background-color: #daa520;
+      padding: 15px 10px;
+      font-family: 'Roboto regular'; }
+      nav ul li:hover {
+        color: #daa520;
+        background: white; }
+        nav ul li:hover a {
+          color: #daa520; }
+      nav ul li a {
+        color: white;
+        text-decoration: none; }
+
+h1, h2 {
+  text-align: center; }
+
+h1 {
+  font-size: 20vh;
+  color: #daa520;
+  font-family: 'Opensans regular'; }
+
+h2 {
+  color: #373737;
+  font-family: 'Roboto regular'; }
+
+.container {
+  display: flex;
+  justify-content: space-around; }
 
 /*# sourceMappingURL=style.css.map */
